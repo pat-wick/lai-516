@@ -1,5 +1,5 @@
 from vpython import sphere, vector, color, rate, mag2, norm
-# mag computes the magnitude of a vector squared, norm computes the unit vector (direction)
+# mag2 computes the magnitude of a vector squared, norm computes the unit vector (direction)
 
 
 # Constants
