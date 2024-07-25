@@ -155,31 +155,31 @@ NIL
 @#$#@#$#@
 ## WHAT IS IT?
 
-(a general understanding of what the model is trying to show or explain)
+A makeshift player character movement system for future game development.
 
 ## HOW IT WORKS
 
-(what rules the agents use to create the overall behavior of the model)
+Spawns an agent which is controlled by the keyboard (WASD).
 
 ## HOW TO USE IT
 
-(how to use the model, including a description of each of the items in the Interface tab)
+Click Setup -> Go to run, then control the character with W (up), A (left), S (down), D (right).
 
 ## THINGS TO NOTICE
 
-(suggested things for the user to notice while running the model)
+This character only moves one step per key press. Automatic movement in heading direction is coded and can be swapped by moving a comment.
 
 ## THINGS TO TRY
 
-(suggested things for the user to try to do (move sliders, switches, etc.) with the model)
+Move around the screen, get a feel for speed and step control
 
 ## EXTENDING THE MODEL
 
-(suggested things to add or change in the Code tab to make the model more complicated, detailed, accurate, etc.)
+Add a target to try and "catch," stationary first and then make it move
 
 ## NETLOGO FEATURES
 
-(interesting or unusual features of NetLogo that the model uses, particularly in the Code tab; or where workarounds were needed for missing features)
+I'm not sure if this was the most efficient way to make a movement system, but it seems to work
 
 ## RELATED MODELS
 
@@ -187,7 +187,7 @@ NIL
 
 ## CREDITS AND REFERENCES
 
-(a reference to the model's URL on the web if it has one, as well as any other necessary credits, citations, and links)
+Modified movement system from Disease Solo, found in the default modules library.
 @#$#@#$#@
 default
 true
