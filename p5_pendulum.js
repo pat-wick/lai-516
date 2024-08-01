@@ -1,26 +1,28 @@
 let angle; // Current angle of the pendulum
 let angVelocity; // Current angular velocity
 let angAcceleration; // Angular acceleration
-let radius; // Length of the pendulum arm
+let length; // Length of the pendulum arm
 let originX, originY; // The origin point of the pendulum
+let degrees; // Initial pendulum angle in degrees
 
 function setup() {
   createCanvas(600, 600);
-  angle = 15 * PI / 180; // Initial angle (15 degrees)
+  degrees = 15;
+  angle = degrees * PI / 180; // Initial angle
   angVelocity = 0.0;
   angAcceleration = 0.0;
-  radius = 300; // Length of the pendulum arm
+  length = 300; // Length of the pendulum arm
   mountX = width / 2; // Set the attach point at the center top of the canvas
   mountY = 0;
-  background(255); // Set background to white
+  background('white');
 }
 
 function draw() {
   background('white');
 
   // Calculate the position of the pendulum bob
-  let x = mountX + radius * sin(angle);
-  let y = mountY + radius * cos(angle);
+  let x = mountX + length * sin(angle);
+  let y = mountY + length * cos(angle);
 
   // Draw the pendulum
   stroke('black');
@@ -31,7 +33,7 @@ function draw() {
 
   // Compute the angular acceleration
   let gravity = 9.81; // Acceleration due to gravity
-  angAcceleration = (-gravity / radius) * sin(angle);
+  angAcceleration = (-gravity / length) * sin(angle);
 
   // Update the angular velocity and angle
   angVelocity += angAcceleration;
