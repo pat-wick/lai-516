@@ -1,3 +1,7 @@
+/* This works in a random p5.js web editor project, but for some reason
+ doesn't like my saved project on my account...
+ */
+
 let angle; // Current angle of the pendulum
 let angVelocity; // Current angular velocity
 let angAcceleration; // Angular acceleration
